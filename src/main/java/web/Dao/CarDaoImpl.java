@@ -1,4 +1,4 @@
-package web.service;
+package web.Dao;
 
 import org.springframework.stereotype.Component;
 import web.model.Car;
@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class CarDaoImpl implements CarDao {
 
     @Override
-    public List<Car> returnCarForList(int number) {
+    public List<Car> returnTheNumberOfCars(int number) {
         List<Car> car;
         if (number >= 5) {
             car = createCarList();
